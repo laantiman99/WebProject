@@ -1,0 +1,110 @@
+rect {
+    fill: white;
+}
+
+.navbar .mid-text {
+    display: none;
+}
+
+.top1 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.nav-scroll {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.nav-scroll rect {
+    fill: black
+}
+
+.nav-scroll .mid-text {
+    display: contents;
+    transition: 0.5s;
+}
+
+.nav-scroll .book-now-button {
+    border: solid;
+    border-color: black;
+    color: black;
+    transition: 0.5s;
+}
+
+.nav-scroll .mid-text {
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.book-now-button {
+    border: solid;
+    border-color: white;
+    height: 100%;
+    padding: 10px;
+    font-family: 'rubik';
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+svg {
+    padding-top: 5px;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.side-nav a {
+    padding: 20px 20px 20px 40px;
+    text-decoration: none;
+    font-size: 26px;
+    display: block;
+    position: relative;
+    color: #292524;
+    transition: 0.5s;
+}
+
+.side-nav a:hover {
+    color: black;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 100px;
+    margin-right: 10px;
+    transition: 0.5s;
+}

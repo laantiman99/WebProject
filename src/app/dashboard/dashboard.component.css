@@ -1,0 +1,22 @@
+.logo-db {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 120px 0px 10px 35px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    margin-left: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-color: black;
+    padding: .375rem .75rem;
+    background-color: rgb(255, 255, 255);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(240, 238, 234);
+}

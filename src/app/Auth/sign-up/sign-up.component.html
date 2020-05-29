@@ -1,0 +1,13 @@
+<div class="signup-box" (click)="close()">
+  <form (submit)="onSignup(signup)" #signup="ngForm">
+    <h4>Name</h4>
+    <input ngModel type="text" name="name"  required>
+    <h4>Email</h4>
+    <input  ngModel type="email"name="email" #inputEmail="ngModel" required>
+    <br>
+    <h4>Password</h4>
+    <input ngModel type="password" name="password" required>
+    <button type="submit">Sign up</button>
+  </form>
+</div>
+

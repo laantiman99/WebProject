@@ -1,0 +1,74 @@
+.page2{
+  margin:50px 0 50px 0;
+}
+.sports{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.sports div img{
+
+}
+img{
+  width: 300px;
+  height: 250px;
+}
+
+.heading{
+  padding:20px 0 5px 0;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 40px;
+
+}
+.underline{
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}
+
+.heading-div{
+  padding-bottom: 40px;
+}
+.content{
+  background-color: rgb(187, 184, 184);
+}
+.content p{
+  text-align: center;
+  font-size: 30px;
+  line-height: 55px;
+  padding: 40px 60px 40px 60px;
+  font-weight: lighter;
+}
+
+.overlay-page2{
+
+  z-index: 1;
+  background-color: black;
+  color: black;
+  height: 250px;
+  width: 300px;
+  position: absolute;
+  opacity: 0.7;
+}
+.caption{
+  position: absolute;
+  z-index: 2;
+  font-size: 30px;
+  margin: 100px 0 0 100px;
+  color:white;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.caption1{
+  position: absolute;
+  z-index: 2;
+  font-size: 30px;
+  margin: 100px 0 0 80px;
+  color:white;
+  font-weight: lighter;
+  text-align: center;
+}
+

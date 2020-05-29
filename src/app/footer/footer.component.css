@@ -1,0 +1,23 @@
+.footer{
+  background-color: rgb(211, 211, 211);
+  padding-top: 40px;
+}
+.main-foot{
+  display: flex;
+  justify-content: space-evenly;
+}
+.end{
+  text-align: center;
+}
+h1{
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+h2{
+  font-weight: lighter;
+  padding-top: 10px;
+}
+h4{
+  padding-top: 40px;
+  font-weight: lighter;
+}

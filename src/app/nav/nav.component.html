@@ -1,0 +1,29 @@
+<nav class="navbar">
+    <span class="">
+    <a href="#" (click)="openSlide()">
+      <svg viewBox="0 0 100 80" width="60" height="60">
+        <rect width="60" height="10"></rect>
+        <rect y="20" width="60" height="10"></rect>
+        <rect y="40" width="60" height="10"></rect>
+      </svg>
+    </a>
+  </span>
+    <h2 class="mid-text">PriSports</h2>
+    <a *ngIf="!authenticatedUser" routerLink="/signup" class="book-now-button" target="_blank">
+  Book Now | +
+</a>
+    <a (click)="onLogout()" class="book-now-button" *ngIf="authenticatedUser">Logout</a>
+</nav>
+<div id="side-menu" class="side-nav">
+
+
+    <a href="#" class="btn-close" (click)="close()">&times;</a>
+    <div id="displayNone">
+        <a routerLink='/home' (click)="close()">Home</a>
+        <a href="#" (click)="close()">History of PriSports</a>
+        <a href="#" (click)="close()">Our Coaching System</a>
+        <a *ngIf="authenticatedUser" routerLink="/dashboard" (click)="close()">Dashboard</a>
+        <a *ngIf="!authenticatedUser" routerLink="/login" (click)="close()">Login</a>
+    </div>
+
+</div>
