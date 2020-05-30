@@ -1,6 +1,7 @@
 video{
   height: 100vh;
   object-fit: fill;
+  overflow-x: hidden;
 }
 .overlay{
   height: 100vh;

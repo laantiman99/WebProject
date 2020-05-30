@@ -5,15 +5,17 @@ import { SignUpComponent } from './Auth/sign-up/sign-up.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './Auth/auth.guard';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 
 
 const routes: Routes = [
 
   { path:'home', component: MainPageComponent},
-  { path:'dashboard/:name', component: DashboardComponent, canActivate:[AuthGuard]},
+  { path:'c_dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
   { path:'login', component: LoginComponent },
   { path: 'signup', component:SignUpComponent},
+  { path: 'u_dashboard', component:UserDashboardComponent},
 ];
 
 @NgModule({

@@ -9,12 +9,15 @@ import { CoachingForComponent } from './coaching-for/coaching-for.component';
 import { Page3Component } from './page3/page3.component';
 import { Page4Component } from './page4/page4.component';
 import { FooterComponent } from './footer/footer.component';
-import {FileUploadComponent} from './dashboard/file-upload/file-upload.component';
+
 import { FormsModule } from '@angular/forms';
+
 import { HttpClientModule } from '@angular/common/http';
 import { SignUpComponent } from './Auth/sign-up/sign-up.component';
 import { LoginComponent } from './Auth/login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavOtherComponent } from './nav-other/nav-other.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SignUpComponent,
     LoginComponent,
     DashboardComponent,
-    FileUploadComponent
+    NavOtherComponent,
+    UserDashboardComponent,
+
   ],
   imports: [
     BrowserModule,

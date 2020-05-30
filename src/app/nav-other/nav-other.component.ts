@@ -1,28 +1,31 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { AuthService } from '../auth.service';
 import { Subscription } from 'rxjs';
+import { AuthService } from '../auth.service';
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  selector: 'app-nav-other',
+  templateUrl: './nav-other.component.html',
+  styleUrls: ['./nav-other.component.css']
 })
-export class NavComponent implements OnInit, OnDestroy {
+export class NavOtherComponent implements OnInit, OnDestroy {
 
   authenticatedUser:boolean=false;
   private authListenSubs:Subscription;
   constructor (private authService:AuthService) {};
 
   ngOnInit(): void {
+
     this.authenticatedUser = this.authService.getIsAuth();
     this.authListenSubs = this.authService.getAuthStatusListener().subscribe(isAuthenticated=>{
       this.authenticatedUser = isAuthenticated;
     });
 
-  }
 
+  }
   ngOnDestroy():void{
+
     this.authListenSubs.unsubscribe();
+
   }
 
   openSlide(){

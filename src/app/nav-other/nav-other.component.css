@@ -1,8 +1,9 @@
 rect{
-  fill: white;
+  fill: black;
 }
 .navbar .mid-text{
-  display: none;
+  margin-top: 10px;
+  color: white;
 }
 .top1{
   display: flex;
@@ -12,7 +13,7 @@ rect{
 }
 
 .nav-scroll{
-  background-color:white;
+  background-color:black;
   transition: 0.5s;
 }
 .nav-scroll rect{
@@ -35,11 +36,11 @@ rect{
 
 .book-now-button{
   border: solid;
-  border-color:white;
+  border-color:black;
   height: 100%;
   padding: 10px;
   font-family: 'rubik';
-  color: white;
+  color: black;
   font-size: 25px;
   cursor: pointer;
   text-decoration: none;
@@ -56,6 +57,7 @@ nav{
   width: 100%;
   top: 0;
   scroll-behavior: smooth;
+  background-color: gray;
 }
 .navbar{
   overflow: hidden;

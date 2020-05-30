@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,18 +7,12 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  user: {name: string,pass:number};
-  constructor(private route: ActivatedRoute,private router: Router) { }
 
+  constructor(public authService: AuthService) { }
+  name='Zain';
   ngOnInit(): void {
-    this.user={
-      name:this.route.snapshot.paramMap.get('name'),
-      pass:1
   }
-    // this.route.params.subscribe(
-    //   (params:Params)=>{
-    //     this.user.name=params[]
-    //   }
-    // )
-  }
+
+
+
 }

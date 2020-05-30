@@ -4,17 +4,18 @@
 <div class="info">
   <div class="main">
     <div class="head">
-      <h1>Welcome, Coach {{name}} </h1>
+      <h1>Welcome, {{ name }}</h1>
     </div>
 
     <div class="details">
-      <a href="#">View Practice Sessions</a>
+      <a href="#">Mark Attendance</a>
+      <a href="#">Other Details</a>
     </div>
 
     <div class="stats">
       <h1>Today's Summary</h1>
-      <h4>Client: </h4>
-      <h4>Court: </h4>
+      <h4>Rank: {{ rank }}</h4>
+      <h4>Practice Sessions: </h4>
     </div>
   </div>
   <div class="img">
@@ -22,6 +23,7 @@
   </div>
 
 </div>
+
 
 
 

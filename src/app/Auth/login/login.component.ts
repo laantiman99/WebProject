@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { AuthService } from '../sign-up/auth.service';
+import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
     }
     this.authService.login(form.value.email, form.value.password);
   }
+
   close(){
     document.getElementById('side-menu').style.width='0px';
     document.getElementById('displayNone').style.display='none';
